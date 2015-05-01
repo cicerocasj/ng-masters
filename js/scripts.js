@@ -21,6 +21,7 @@ function vaibuscarasissues(){
                 });
             },
             'popula_tabela': function(){
+                issuestable.empty();
                 for(var line in issues){
                     issuestable.append(line_table(issues[line].number, issues[line].title));
                 }
