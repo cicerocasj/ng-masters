@@ -7,19 +7,13 @@
 <body>
 <div style="width: 100%">
     <div style="width: 100%">
-        Usuario <input type="text" id="user">
-        Repositório <input type="text" id="reponame">
+        Usuario <input type="text" id="user" value="freedomsponsors">
+        Repositório <input type="text" id="reponame" value="www.freedomsponsors.org">
     </div>
-    <div style="width: 50%">
-        <button onclick="vaibuscarasissues()">Vai buscar as issues - V.1</button>
-    </div>
-    <div style="width: 50%">
-        <button onclick="vaibuscarasissues()">Vai buscar as issues - V.2</button>
-    </div>
+    <button onclick="vaibuscarasissues()">Vai buscar as issues - V.1</button>
+    <button onclick="vaibuscarasissues_this()">Vai buscar as issues - V.2</button>
     <div style="width: 100%">
-        <table id="issuestable">
-            <tr><th>Numero</th><th>Titulo</th>
-        </table>
+        <table id="issuestable"></table>
     </div>
 </div>
 <script src="js/jquery-1.11.2.min.js"></script>
